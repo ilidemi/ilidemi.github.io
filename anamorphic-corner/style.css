@@ -1,0 +1,21 @@
+#toolbar {
+    width: 1745px;
+    display: flex;
+    justify-content: center;
+}
+
+#toolbar > button {
+    margin: 5px;
+}
+
+#toolbar > button.selected {
+    margin: 4px;
+    border-color: black;
+    border-width: 3px;
+}
+
+canvas {
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin: 10px;
+}

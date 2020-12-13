@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Linked canvases</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="toolbar">
+        <button id="drawButton" class="selected" onclick="handleDrawClick()">Draw</button>
+        <button id="selectButton" onclick = "handleSelectClick()">Select</button>
+    </div>
+    <canvas id="leftCanvas" style="width: 848px; height: 448px; touch-action:none"></canvas>
+    <canvas id="rightCanvas" style="width: 848px; height: 448px; touch-action:none"></canvas>
+    <canvas id="bottomCanvas" style="width: 1721px; height: 448px; touch-action:none"></canvas>
+    <script src="script.js"></script>
+</body>
+
+</html>
