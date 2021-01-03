@@ -1,5 +1,14 @@
+body {
+    margin: 8px;
+}
+
+#app {
+    margin: 0px auto;
+}
+
 #toolbar {
-    width: 1745px;
+    width: 90vw;
+    max-height: 10vh;
     display: flex;
     justify-content: center;
 }
@@ -18,4 +27,17 @@ canvas {
     border: 1px solid black;
     box-sizing: border-box;
     margin: 10px;
+    touch-action: none;
+}
+
+#leftCanvas, #rightCanvas {
+    cursor: crosshair;
+    width: calc(45vw - 24px);
+    height: calc(45vh - 24px);
+}
+
+#bottomCanvas {
+    cursor: move;
+    width: calc(90vw - 24px);
+    height: calc(45vh - 24px);
 }

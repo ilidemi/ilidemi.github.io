@@ -7,13 +7,23 @@
 </head>
 
 <body>
-    <div id="toolbar">
-        <button id="drawButton" class="selected" onclick="handleDrawClick()">Draw</button>
-        <button id="selectButton" onclick = "handleSelectClick()">Select</button>
+    <div id="app">
+        <div id="toolbar">
+            <button id="drawButton" class="selected">Draw</button>
+            <button id="selectButton">Select</button>
+            <select id="examples">
+                <option value="load" selected="selected">Load example</option>
+                <option value="square-triangle">Square or triangle?</option>
+                <option value="circle-square">Circle or square?</option>
+                <option value="swap">Swap</option>
+                <option value="forest-tower">Forest or city?</option>
+                <option value="false-true">True or false?</option>
+            </select>
+        </div>
+        <canvas id="leftCanvas"></canvas>
+        <canvas id="rightCanvas"></canvas>
+        <canvas id="bottomCanvas"></canvas>
     </div>
-    <canvas id="leftCanvas" style="width: 848px; height: 448px; touch-action:none"></canvas>
-    <canvas id="rightCanvas" style="width: 848px; height: 448px; touch-action:none"></canvas>
-    <canvas id="bottomCanvas" style="width: 1721px; height: 448px; touch-action:none"></canvas>
     <script src="script.js"></script>
 </body>
 
