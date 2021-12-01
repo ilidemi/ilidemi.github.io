@@ -2,7 +2,7 @@ def gen(path, page_count):
     with open(f'{path}/rss.xml', 'w') as rss:
         rss.write('<rss><channel>\n')
         for i in range(1, 21):
-            rss.write(f'<item><link>./post{i}</link></item>\n')
+            rss.write(f'<item><title>post{i}</title><link>./post{i}</link></item>\n')
         rss.write('</channel></rss>\n')
 
     for page_num in range(1, page_count + 1):
