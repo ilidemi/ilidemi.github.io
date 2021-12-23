@@ -1,4 +1,5 @@
 <rss><channel>
+<title>1fb</title>
 <item><title>post1</title><link>./post1</link></item>
 <item><title>post2</title><link>./post2</link></item>
 <item><title>post3</title><link>./post3</link></item>
@@ -9,14 +10,4 @@
 <item><title>post8</title><link>./post8</link></item>
 <item><title>post9</title><link>./post9</link></item>
 <item><title>post10</title><link>./post10</link></item>
-<item><title>post11</title><link>./post11</link></item>
-<item><title>post12</title><link>./post12</link></item>
-<item><title>post13</title><link>./post13</link></item>
-<item><title>post14</title><link>./post14</link></item>
-<item><title>post15</title><link>./post15</link></item>
-<item><title>post16</title><link>./post16</link></item>
-<item><title>post17</title><link>./post17</link></item>
-<item><title>post18</title><link>./post18</link></item>
-<item><title>post19</title><link>./post19</link></item>
-<item><title>post20</title><link>./post20</link></item>
 </channel></rss>
