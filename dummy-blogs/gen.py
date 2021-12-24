@@ -7,7 +7,7 @@ def gen(title, page_count):
     with open(f'{title}/rss.xml', 'w') as rss:
         rss.write('<rss><channel>\n')
         rss.write(f'<title>{title}</title>\n')
-        range_end = 21 if page_count > 1 else 11
+        range_end = 31 if page_count > 1 else 21
         for i in range(1, range_end):
             rss.write(
                 f'<item><title>post{i}</title><link>./post{i}</link></item>\n')
@@ -31,8 +31,8 @@ def gen(title, page_count):
             page.write('<body>\n')
 
             page.write('<div>\n')
-            for post_rel_num in range(1, 11):
-                post_num = (page_num - 1) * 10 + post_rel_num
+            for post_rel_num in range(1, 21):
+                post_num = (page_num - 1) * 20 + post_rel_num
                 page.write(
                     f'<div><a href="./post{post_num}">post{post_num}</a></div>\n')
             page.write('</div>\n')
