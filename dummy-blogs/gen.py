@@ -1,8 +1,7 @@
-import os
-
+from pathlib import Path
 
 def gen(title, page_count):
-    os.mkdir(title)
+    Path(title).mkdir(exist_ok=True)
 
     with open(f'{title}/rss.xml', 'w') as rss:
         rss.write('<rss><channel>\n')
@@ -45,7 +44,7 @@ def gen(title, page_count):
 
 
 def gen_fail(title):
-    os.mkdir(title)
+    Path(title).mkdir(exist_ok=True)
 
     with open(f'{title}/rss.xml', 'w') as rss:
         rss.write('<rss><channel>\n')
